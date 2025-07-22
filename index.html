@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUST MAIN VANILLA | Официальный сервер</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>RUST MAIN VANILLA</h1>
+                <p>Официальный сервер</p>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about">О сервере</a></li>
+                    <li><a href="#rules">Правила</a></li>
+                    <li><a href="#stats">Статистика</a></li>
+                    <li><a href="#connect">Как подключиться</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Лучший ванильный опыт в Rust</h2>
+            <p>Присоединяйся к нашему сообществу уже сегодня!</p>
+            <div class="server-info">
+                <div class="info-box">
+                    <span class="info-label">IP Адрес:</span>
+                    <span class="info-value" id="server-ip">212.22.93.221:28014</span>
+                    <button class="copy-btn" onclick="copyToClipboard('server-ip')">Копировать</button>
+                </div>
+                <div class="info-box">
+                    <span class="info-label">Онлайн:</span>
+                    <span class="info-value" id="online-count">Ошибка загрузки!</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2>О нашем сервере</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>RUST MAIN VANILLA - это сервер с чистой ванильной игрой, без донатов и админского вмешательства. Мы стремимся предоставить честный и сбалансированный игровой процесс для всех участников.</p>
+                    <ul class="features-list">
+                        <li>Чистая ванильная версия Rust</li>
+                        <li>Регулярные вайпы по расписанию</li>
+                        <li>Активные администраторы</li>
+                        <li>Защита от читеров</li>
+                        <li>Стабильный аптайм 99.9%</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/500x300" alt="RUST MAIN VANILLA Скриншот">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rules" class="section rules-section">
+        <div class="container">
+            <h2>Правила сервера</h2>
+            <div class="rules-list">
+                <div class="rule-card">
+                    <h3>1. Запрещены читы</h3>
+                    <p>Использование любых сторонних программ, дающих преимущество, карается перманентным баном.</p>
+                </div>
+                <div class="rule-card">
+                    <h3>2. Уважение к игрокам</h3>
+                    <p>Запрещены расизм, оскорбления и чрезмерный токсичный поведение.</p>
+                </div>
+                <div class="rule-card">
+                    <h3>3. Запрещён буг abuse</h3>
+                    <p>Использование багов игры для получения преимущества запрещено.</p>
+                </div>
+                <div class="rule-card">
+                    <h3>4. Нет доната</h3>
+                    <p>На сервере полностью отсутствуют платные преимущества.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="connect" class="section connect-section">
+        <div class="container">
+            <h2>Как подключиться</h2>
+            <div class="connect-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <p>Откройте Rust в вашем Steam</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <p>Нажмите F1 чтобы открыть консоль</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <p>Введите: <code>connect 212.22.93.221:28014</code></p>
+                    <button class="copy-btn" onclick="copyToClipboard('connect-command')">Копировать</button>
+                    <span id="connect-command" class="hidden">connect 212.22.93.221:28014</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>RUST MAIN VANILLA</h3>
+                    <p>Лучший ванильный опыт в Rust</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Контакты</h3>
+                    <p>Email: scx@mrpixelglim.ru</p>
+                    <p>Discord: discord.mainvanilla.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Быстрые ссылки</h3>
+                    <ul>
+                        <li><a href="#about">О сервере</a></li>
+                        <li><a href="#rules">Правила</a></li>
+                        <li><a href="#connect">Подключение</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 RUST MAIN VANILLA. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
