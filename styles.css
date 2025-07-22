@@ -359,7 +359,69 @@ ul {
         margin-right: 15px;
     }
 
-    .hero {
+    .hero {/* Красная тема Rust */
+:root {
+    --primary-color: #e74c3c; /* Красный вместо оранжевого */
+    --secondary-color: #1a1a1a; /* Темный фон */
+    --accent-color: #c0392b; /* Темно-красный */
+    --light-color: #e0e0e0;
+    --dark-color: #121212;
+    --text-color: #e0e0e0;
+    --text-light: #b3b3b3;
+}
+
+body {
+    background-color: var(--dark-color);
+    color: var(--text-color);
+}
+
+/* Новый фон для hero-секции */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                url('https://i.imgur.com/gP4N4tY.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+}
+
+/* Обновленные карточки */
+.rule-card, .stat-item, .step {
+    background: rgba(30, 30, 30, 0.8);
+    border: 1px solid var(--accent-color);
+}
+
+/* Хедер */
+.main-header {
+    background-color: rgba(26, 26, 26, 0.9);
+    backdrop-filter: blur(5px);
+}
+
+/* Кнопки */
+.copy-btn {
+    background: var(--accent-color);
+}
+
+.copy-btn:hover {
+    background: var(--primary-color);
+}
+
+/* Секции */
+.section {
+    background-color: var(--secondary-color);
+}
+
+.rules-section {
+    background-color: var(--dark-color);
+}
+
+/* Текст */
+h1, h2, h3, h4 {
+    color: var(--primary-color);
+}
+
+/* Футер */
+.main-footer {
+    background-color: var(--dark-color);
+    border-top: 2px solid var(--accent-color);
+}
         padding: 150px 0 80px;
     }
 
